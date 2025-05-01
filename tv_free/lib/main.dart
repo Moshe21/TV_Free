@@ -34,7 +34,7 @@ class VideoPlayerScreen extends StatefulWidget {
 class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
   final Map<String, String> _videoUrls = {
     'Video 1 (Network)':
-        'https://www.youtube.com/watch?v=v6tk0CxaVU8',
+   'https://www.capoplayer.met/play/winsportsplus.php',
     'Video 2 (Network)':
         'https://www.youtube.com/watch?v=v6tk0CxaVU8',
     'Video 3 (Network)':
