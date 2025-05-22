@@ -7,12 +7,12 @@ void main() {
       title: 'TV Free Moshe',
       theme: ThemeData(
         brightness: Brightness.dark,
-        primaryColor: const Color(0xFFFF6B00), // Naranja principal de Platzi
+        primaryColor: const Color(0xFFFF6B00), 
         colorScheme: const ColorScheme.dark(
-          primary: Color(0xFFFF6B00), // Naranja Platzi
-          secondary: Color(0xFF6A00FF), // Un morado vibrante como acento
-          surface: Color(0xFF1E1E1E), // Fondo más oscuro para Card/Superficies
-          background: Color(0xFF121212), // Fondo principal del Scaffold
+          primary: Color(0xFFFF6B00), 
+          secondary: Color(0xFF6A00FF),
+          surface: Color(0xFF1E1E1E), 
+          background: Color(0xFF121212),
           onPrimary: Colors.white,
           onSecondary: Colors.white,
           onSurface: Colors.white70,
@@ -145,8 +145,7 @@ class StreamMenuPage extends StatelessWidget {
 class VideoPage extends StatefulWidget {
   final String title;
   final String videoUrl;
-  // Puedes añadir más información aquí si la necesitas, como 'description'
-  // final String? description;
+ 
 
   const VideoPage({
     super.key,
@@ -221,8 +220,8 @@ class _VideoPageState extends State<VideoPage> {
     return Scaffold(
       appBar: AppBar(title: Text(widget.title)),
       body: screenWidth > breakpoint
-          ? _buildWideLayout() // Layout para pantallas anchas (video + chat lateral)
-          : _buildNarrowLayout(), // Layout para pantallas estrechas (video arriba, chat abajo)
+          ? _buildWideLayout() 
+          : _buildNarrowLayout(), 
       floatingActionButton: _controller.value.isInitialized && !_isLoading && _errorMessage == null
           ? FloatingActionButton(
               onPressed: () {
@@ -298,15 +297,9 @@ class _VideoPageState extends State<VideoPage> {
             ),
           ),
           const SizedBox(height: 8),
-          // Puedes añadir una descripción aquí si la añades a los datos del stream
-          // Text(
-          //   widget.description ?? 'Descripción del stream en vivo.',
-          //   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-          //     color: Colors.grey[400],
-          //   ),
-          // ),
+          
           const SizedBox(height: 16),
-          // Otros elementos de información (por ejemplo, número de espectadores, botón de compartir)
+         
           Row(
             children: [
               Icon(Icons.person_outline, color: Colors.grey[500], size: 20),
